@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="257" height="257" viewBox="0 0 257 257">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #e0e2e1;
+        stroke-width: 12px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #231f20;
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <title>reject_1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <circle class="cls-1" cx="128.5" cy="128.5" r="122.5"/>
+      <line class="cls-2" x1="76.65" y1="78.81" x2="183.5" y2="185.66"/>
+      <line class="cls-2" x1="183.5" y1="78.81" x2="76.65" y2="185.66"/>
+    </g>
+  </g>
+</svg>
