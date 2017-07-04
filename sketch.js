@@ -18,6 +18,7 @@ function preload() {
 
 function setup() {
   //createCanvas(200, 200);
+  select("#counts").hide();
   metronome = loadSound("assets/metronome.wav", loaded);
   refSounds[0] = loadSound("assets/boots.wav", loaded);
   refSounds[1] = loadSound("assets/tools.wav", loaded);
@@ -174,4 +175,5 @@ function keyPressed() { // this function is used to play the sounds
 function triggerPlayMode() {
   select("#heading").html("Time to freestyle with your words");
   select("#controls").hide();
+  select("#counts").show();
 }
