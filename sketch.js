@@ -62,6 +62,7 @@ function loaded() {
 
 function changeRecording() {
   select("#record-image").elt.src="assets/rec.svg";
+  circlecountoff.fillGrey();
   recorded = false;
   selectAll(".beat-button")[programState].removeClass("beat-button--deactivate");
   select("#button-reject").elt.disabled = true;
@@ -82,6 +83,7 @@ function changeRecording() {
 
 function retryRecording() {
   select("#record-image").elt.src="assets/rec.svg";
+  circlecountoff.fillGrey();
   recorded = false;
   beats[programState] = new p5.SoundFile();
   select("#button-reject").elt.disabled = true;

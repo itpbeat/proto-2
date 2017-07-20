@@ -1,4 +1,4 @@
-(function($){
+var circlecountoff;
 	$.fn.percentPie = function(options){
 
 		var settings = $.extend({
@@ -72,11 +72,11 @@
 		this.append(canvasElement);
 		return this;
 	}
-}(jQuery));
+
 
 $(document).ready(function() {
 
-	$('.google').percentPie({
+	circlecountoff = $('.google').percentPie({
 		width: 200,
 		trackColor: "#444444",
 		barColor: "#2682D5",
