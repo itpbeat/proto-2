@@ -63,13 +63,19 @@ button {
 .beat-button--deactivate {
   background-color: #d1d3d2; }
 
+.button-record {
+  position: relative; }
+
 .record__button {
   opacity: 1; }
   .record__button--disabled {
     opacity: 0.5; }
 .record__image {
   height: 12rem;
-  margin: 0 2rem; }
+  margin: 0;
+  top: 10px;
+  left: 10px;
+  position: absolute; }
 .record__image-small {
   height: 8rem;
   margin: 0 2rem; }

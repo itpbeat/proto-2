@@ -82,7 +82,9 @@ button {
   background-color: #d1d3d2;
 }
 
-
+.button-record {
+  position: relative;
+}
 .record {
   &__button {
     opacity: 1;
@@ -92,7 +94,10 @@ button {
   }
   &__image {
     height: 12rem;
-    margin: 0 2rem;
+    margin: 0;
+    top: 10px;
+    left: 10px;
+    position: absolute;
   }
   &__image-small {
     height: 8rem;
