@@ -91,6 +91,7 @@ function retryRecording() {
 }
 
 function togglePlaying() {
+  console.log("you called me");
   if(recorded == false) {
     if (!metronome.isPlaying()) {
       hold = true;
