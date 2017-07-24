@@ -28,7 +28,7 @@ var circlecountoff;
 			radius = settings.width/2 - settings.barWeight/2;
 			counterClockwise = false,
 			fps = 1000 / settings.fps,
-			update = .01;
+			update = .009;
 			this.angle = settings.startPercent;
 
 		this.drawArc = function(startAngle, percentFilled, color){
