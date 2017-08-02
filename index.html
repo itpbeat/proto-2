@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-  </head>
-  <body>
-    <script src="sketch.js"></script>
-    <h1 id="heading" class="main-heading">Record, Replay and Save</h1>
-    <section class="controls" id="controls">
-      <div class="controls__listen">
-        <h2 id="sound-name" class="listen__title">BOOTS</h2>
-        <button id="ref-button" class="listen__button">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script src="js/index.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  
+  <h1 id="heading" class="main-heading">Record, Replay and Save</h1>
+  <section class="controls" id="controls">
+    <div class="controls__listen">
+      <h2 id="sound-name" class="listen__title">BOOTS</h2>
+      <button id="ref-button" class="listen__button">
           <img src="assets/speaker.svg" class="listen__image">
         </button>
-      </div>
-      <div class="controls__record">
-        <button id="button-reject" class="record__button record__button--disabled" disabled>
+    </div>
+    <div class="controls__record">
+      <button id="button-reject" class="record__button record__button--disabled" disabled>
           <img src="assets/reject.svg" class="record__image-small">
+
         </button>
-        <button class="button-record" id="button-record">
-          <img src="assets/rec.svg" id="record-image" class="record__image">
+      <button class="button-record" id="button-record">
+
+
+          <div class="google chart">
+            <img src="assets/rec.svg" id="record-image" class="record__image">
+          </div>
         </button>
-        <button id="button-accept" class="record__button record__button--disabled" disabled>
+
+
+      <button id="button-accept" class="record__button record__button--disabled" disabled>
           <img src="assets/accept.svg" class="record__image-small">
         </button>
-      </div>
-    </section>
-    <section class="beats-container">
-      <button class="beat-button beat-button--deactivate beat-button-b" disabled>
+    </div>
+  </section>
+  <section class="beats-container">
+    <button class="beat-button beat-button--deactivate beat-button-b" disabled>
         <h2 class="beat-button__title">B</h2>
         <h3 class="beat-button__name">Boots</h3>
       </button>
-      <button class="beat-button beat-button--deactivate beat-button-t" disabled>
+    <button class="beat-button beat-button--deactivate beat-button-t" disabled>
         <h2 class="beat-button__title">T</h2>
         <h3 class="beat-button__name">Tools</h3>
       </button>
-      <button class="beat-button beat-button--deactivate beat-button-k" disabled>
+    <button class="beat-button beat-button--deactivate beat-button-k" disabled>
         <h2 class="beat-button__title">K</h2>
         <h3 class="beat-button__name">Kale</h3>
       </button>
-      <button class="beat-button beat-button--deactivate beat-button-s" disabled>
+    <button class="beat-button beat-button--deactivate beat-button-s" disabled>
         <h2 class="beat-button__title">S</h2>
         <h3 class="beat-button__name">Shoes</h3>
       </button>
-    </section>
-    <section class="count-container" id="counts">
-        <h3 class="count__inst"> Press B, T, K, S </h3>
-        <div class="count__tally">
-          <p class="count__number" id="count-no"> 0 </p>
-          <p class="count__total" id="total-counts"> of 40 </p>
-        </div>
-    </section>
+  </section>
+  <section class="count-container" id="counts">
+    <h3 class="count__inst"> Press B, T, K, S </h3>
+    <div class="count__tally">
+      <p class="count__number" id="count-no"> 0 </p>
+      <p class="count__total" id="total-counts"> of 40 </p>
+    </div>
+  </section>
 
-  </body>
+
+
+</body>
+
 </html>
